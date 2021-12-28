@@ -1,0 +1,84 @@
+/*
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*/
+body {
+  height: 1200px;
+  width: 100%;
+  background-color: rgb(185, 231, 233); 
+  background-image: linear-gradient(rgb(185, 231, 233), rgb(77, 182, 231));
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.App > div {
+  position: static;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.image1:hover{
+  animation: imageAnim 5s infinite;
+}
+
+
+.text1:hover{
+  animation: grow 3s infinite;
+
+}
+
+
+
+@keyframes grow {
+  0% {
+    background: burlywood;
+    font-family: cursive;
+    cursor: grab;
+  }
+  100% { 
+    flex-grow: 2; 
+    background: goldenrod;
+    font-family: cursive;
+    font-size: 35px;
+    cursor: grab;
+  }
+}
+
+@keyframes imageAnim {
+  0% {
+    color: black;
+    cursor: progress;
+
+  }
+  100% {
+    color: black;
+    cursor: progress;
+
+  }
+}
